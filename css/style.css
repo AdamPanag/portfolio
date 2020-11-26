@@ -15,7 +15,6 @@ body {
     justify-content: center;
     align-items: center;
     align-self: flex-start;
-    position: fixed;
     font-size: 1.2rem;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.7);
 }
@@ -127,38 +126,42 @@ body {
 
 .project-box {
     width: 370px;
-    height: 500px;
+    height: 450px;
     box-shadow: 0px 3px 10px rgba(73,63,252,0.5);
     border-radius: 10px;
     margin-bottom: 30px;
     transition: transform 0.4s;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-box:hover {
-    transform: translate(10px, -7px)
+    transform: scale(1.1, 1.1);
 }
 
 .project-img {
     display: block;
     border-radius: 10px 10px 0 0;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    flex-grow: 1;
     width: 100%;
+    height: 185px;
 }
 
 .project-info {
     padding: 0px 15px;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.project-info .title {
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .project-info .bottom {
-    position: relative;
-    bottom: 0;
+    padding-bottom: 15px;
 }
 
 .project-box .labels span {

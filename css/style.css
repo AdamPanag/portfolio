@@ -62,12 +62,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:  rgb(73, 63, 252);
+    color:  rgb(0, 0, 0);
 }
 
 .intro {  
     padding-left: 100px;
+    display: flex;
+    flex-direction: column;
 }
+
+.social a {
+    display: inline-block;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(49, 46, 46);
+}
+
+.social a .fa-linkedin {
+    color: rgb(0, 110, 255);
+}
+
 
 .conversion-btn {
     display: inline-block;
@@ -75,6 +90,7 @@ body {
     height: 25px;
     width: 120px;
     padding: 5px 10px;
+    text-align: center;
     color: #fff;
     background: rgb(73, 63, 252);
     outline: none;
@@ -84,8 +100,6 @@ body {
     border-radius: 25px;
     font-size: 1rem;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
 }
 
 .conversion-btn:hover {
@@ -114,23 +128,19 @@ body {
 .projects-list {
     padding: 0px 80px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.projects-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .project-box {
-    width: 370px;
+    min-width: 370px;
     height: 450px;
     box-shadow: 0px 3px 10px rgba(73,63,252,0.5);
     border-radius: 10px;
     margin-bottom: 30px;
     transition: transform 0.4s;
+    flex: 1 1 370px;
+    flex: 0 1 370px;
     display: flex;
     flex-direction: column;
 }
@@ -142,16 +152,16 @@ body {
 .project-img {
     display: block;
     border-radius: 10px 10px 0 0;
-    flex-grow: 1;
     width: 100%;
     height: 185px;
 }
 
 .project-info {
-    padding: 0px 15px;
-    flex-grow: 2;
+    padding: 4px 15px;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    position: relative;
 }
 
 .project-info .title {
@@ -161,7 +171,14 @@ body {
 }
 
 .project-info .bottom {
-    padding-bottom: 15px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 15px;
+}
+
+.project-info .bottom .project-links {
+    padding: 0px 15px;
 }
 
 .project-box .labels span {
@@ -187,11 +204,5 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .projects-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
+    
   }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdamPanag | Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="img/AP.png"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -27,6 +28,14 @@
                 I have built this page in order to practise my front-end development skills.
                 Here, you will find some of my projects and you will get to know me better.
             </p>
+            <div class="social">
+                <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adam-panagiotidis/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
             <a class="conversion-btn" href="#projects">Check my work</a>
         </div>
         
@@ -35,20 +44,22 @@
 
     <section id="projects">
         <div class="section-title">{projects}</div>
-        <div class="projects-list">
-            <div class="projects-row">
-                <div class="project-box">
-                    <img class="project-img" src="img/usa.png" alt="">
-                    <div class="project-info">
-                        <span class="title">USA Elections - Data Analytics</span>
-                        <p>Analyzing the data from the 2016 USA elections. Finding the top donors, campaign expenditures, investigating swing states etc.</p>
-                        <div class="labels">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>Matoplotlib</span>
-                        </div>
-                        <hr>
-                        <div class="bottom">
+        <div class="projects-list"> 
+            <!-- USA Elections -->
+            <div class="project-box">
+                <img class="project-img" src="img/usa.png" alt="">
+                <div class="project-info">
+                    <span class="title">USA Elections - Data Analytics</span>
+                    <p>Analyzing the data from the 2016 USA elections. Finding the top donors, campaign expenditures, investigating swing states etc.</p>
+                    <div class="labels">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
                             <a href="https://nbviewer.jupyter.org/github/AdamPanag/USA_elections_2016_Data_Analysis/blob/main/USA_elections_2016.ipynb">
                                 <i class="fas fa-globe"></i>
                             </a>
@@ -58,34 +69,53 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-box">
-                    <img class="project-img" src="img/eatros.png" alt="">
-                    <div class="project-info">
-                        <span class="title">Eatros</span>
-                        <p>A web application that connects patients with doctors</p>
-                        <div class="labels">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>NoSQL</span>
-                        </div>
-                        <hr>
-                        <div class="bottom">
+            </div>
+            <!-- Eatros -->
+            <div class="project-box">
+                <img class="project-img" src="img/eatros.png" alt="">
+                <div class="project-info">
+                    <span class="title">Eatros</span>
+                    <p>A web application that connects patients with doctors.</p>
+                    <div class="labels">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>NoSQL</span>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
                             <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="project-box"></div>
             </div>
-            <div class="projects-row">
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                
+            <!-- Moovable -->
+            <div class="project-box">
+                <img class="project-img" src="img/moovable.png" alt="">
+                <div class="project-info">
+                    <span class="title">Moovable</span>
+                    <p>A landing page for a startup idea.</p>
+                    <div class="labels">
+                        <span>WordPress</span>
+                        <span>Azure</span>
+                        <span>Elementor</span>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
+                            <a href="https://moovable.azurewebsites.net/">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
         

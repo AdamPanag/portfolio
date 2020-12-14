@@ -32,14 +32,17 @@ body {
 
 .nav-links {
     color: #fff;
+    border: 3px solid transparent;
     margin-left: 20px;
+    padding: 5px 10px;
     text-decoration: none;
     font-weight: 500;
 }
 
 .nav-links:hover {
-    position: relative;
-    top: -4px;
+    background-color: rgb(73, 63, 252);
+    border-radius: 15px;
+    border: 3px solid white;
 }
 
 .logo-space {
@@ -228,11 +231,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    opacity: 0;
     transition: all 2s ease;
 }
 
 .category {
+    position: relative;
+    left: -2000px;
     min-width: 370px;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -242,6 +246,7 @@ body {
     flex: 0 1 450px;
     display: flex;
     flex-direction: column;
+    transition: all 1.3s ease;
 }
 
 .category-title {
@@ -297,7 +302,9 @@ body {
 
 #message {
     position: absolute;
+    visibility: hidden;
     top: 200px;
+    left: -100px;
     font-size: 25px;
     font-weight: 600;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.7);
@@ -307,5 +314,15 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .project-box {
+        min-width: 350px;
+    }
 
+    .category {
+        min-width: 310px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
   }

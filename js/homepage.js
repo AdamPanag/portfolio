@@ -33,39 +33,46 @@ setInterval(function() {
     }
 }, 50)
 
-// Disable view for mobile phones.
-function reportWindowSize() {
-    const pageContent = document.querySelector(".page-content")
-    const message = document.querySelector("#message")
-    if(window.innerWidth <= 600){ 
-        pageContent.style.visibility = "hidden"
-        message.style.visibility = "visible"
-        message.innerHTML = "Please open the webpage from your computer."
+// // Disable view for mobile phones.
+// function reportWindowSize() {
+//     const pageContent = document.querySelector(".page-content")
+//     const message = document.querySelector("#message")
+//     if(window.innerWidth <= 600){ 
+//         pageContent.style.visibility = "hidden"
+//         message.style.visibility = "visible"
+//         message.style.left = 0
+//         message.innerHTML = "Please open the webpage from your computer."
         
-    } else {
-        message.style.visibility = "hidden"
-        message.innerHTML = ""
-        pageContent.style.visibility = "visible"
-    }
-}
+//     } else {
+//         message.style.visibility = "hidden"
+//         message.innerHTML = ""
+//         pageContent.style.visibility = "visible"
+//     }
+// }
 
-window.onresize = reportWindowSize;
-window.onload = reportWindowSize;
+// window.onresize = reportWindowSize;
+// window.onload = reportWindowSize;
 
+//slide tech stack categories from the left side of the screen
 var categories = document.querySelector(".categories");
+var category = document.querySelectorAll(".category");
 
 var observer = new IntersectionObserver(function(entries) {
-	// isIntersecting is true when element and viewport are overlapping
-    // isIntersecting is false when element and viewport don't overlap
-    
-	if(entries[0].isIntersecting === true) { //the screen displays the tech-stack element
+    //the screen displays the tech-stack element
+	if(entries[0].isIntersecting === true) { 
         console.log('Element has just become visible in screen');
-        categories.style.opacity = 1;
-    }
+        category.forEach(item => {
+            item.style.left = '0px';
+        });
         
-    if(entries[0].isIntersecting === false) { //the screen doesn't display the tech-stack element
+    }
+
+    //the screen doesn't display the tech-stack element
+    if(entries[0].isIntersecting === false) { 
         console.log('out');
-        categories.style.opacity = 0;
+        category.forEach(item => {
+            item.style.left = '-2000px';
+        });
 
     }
         

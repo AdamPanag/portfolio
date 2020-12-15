@@ -97,3 +97,26 @@ body{
     font-weight: bolder;
     cursor: pointer;
 }
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 10px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #b9b0b0;
+    border-radius: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.back-btn i {
+    margin-right: 3px;
+}

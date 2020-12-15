@@ -1,14 +1,3 @@
-// var pxChange = 0;
-// var initPx = 20;
-// var h2 = document.querySelector("h2");
-// var newPx
-
-// setInterval(function() {
-//     newPx = initPx + pxChange;
-//     h2.style.fontSize = `${newPx}px`;
-//     pxChange = pxChange + 0.1;
-//     pxChange = pxChange % 30;
-// }, 30)
 
 var greeting = document.querySelector(".greeting")
 var r,g,b

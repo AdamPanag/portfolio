@@ -21,7 +21,7 @@ body {
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -37,6 +37,10 @@ body {
     padding: 5px 10px;
     text-decoration: none;
     font-weight: 500;
+}
+
+.nav-links i {
+    margin-right: 3px;
 }
 
 .nav-links:hover {

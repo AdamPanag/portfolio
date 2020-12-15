@@ -33,27 +33,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Disable view for mobile phones.
-/*
-function reportWindowSize() {
-    const pageContent = document.querySelector(".page-content")
-    const message = document.querySelector("#message")
-    if(window.innerWidth <= 600){ 
-        pageContent.style.visibility = "hidden"
-        message.style.visibility = "visible"
-        message.style.left = 0
-        message.innerHTML = "Please open the webpage from your computer."
-        
-    } else {
-        message.style.visibility = "hidden"
-        message.innerHTML = ""
-        pageContent.style.visibility = "visible"
-    }
+// Scroll into projects.
+function goToProjects() {
+    const projects = document.querySelector("#projects");
+    projects.scrollIntoView({
+        behavior: 'smooth'
+    });
 }
-
-window.onresize = reportWindowSize;
-window.onload = reportWindowSize;
-*/
 
 //Slide tech stack categories from the left side of the screen
 var categories = document.querySelector(".categories");
@@ -81,3 +67,26 @@ var observer = new IntersectionObserver(function(entries) {
 }, { threshold: [0] });
 
 observer.observe(categories);
+
+
+// Disable view for mobile phones.
+/*
+function reportWindowSize() {
+    const pageContent = document.querySelector(".page-content")
+    const message = document.querySelector("#message")
+    if(window.innerWidth <= 600){ 
+        pageContent.style.visibility = "hidden"
+        message.style.visibility = "visible"
+        message.style.left = 0
+        message.innerHTML = "Please open the webpage from your computer."
+        
+    } else {
+        message.style.visibility = "hidden"
+        message.innerHTML = ""
+        pageContent.style.visibility = "visible"
+    }
+}
+
+window.onresize = reportWindowSize;
+window.onload = reportWindowSize;
+*/

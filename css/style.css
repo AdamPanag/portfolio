@@ -33,7 +33,7 @@ body {
 .nav-links {
     color: #fff;
     border: 3px solid transparent;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 5px 10px;
     text-decoration: none;
     font-weight: 500;
@@ -78,6 +78,10 @@ body {
 .intro .greeting {
     color: rgb(30, 30, 30);
     font-size: 40px;
+}
+
+.intro p {
+    font-size: 18px;
 }
 
 .social a {
@@ -151,7 +155,7 @@ body {
 .project-box {
     min-width: 370px;
     height: 450px;
-    margin-left: 10px;
+    margin: 0px 7px;
     box-shadow: 0px 3px 10px rgba(73,63,252,0.5);
     border-radius: 10px;
     margin-bottom: 30px;
@@ -163,7 +167,7 @@ body {
 }
 
 .project-box:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.07, 1.07);
 }
 
 .project-img {
@@ -282,8 +286,12 @@ body {
     font-size: 40px;
 }
 
-.skill img {
-    max-width: 70px;
+.skill .square{
+    max-width: 60px;
+}
+
+.skill .rectangle{
+    max-width: 90px;
 }
 
 .footer {
@@ -315,7 +323,11 @@ body {
 
 @media screen and (max-width: 600px) {
     .project-box {
-        min-width: 350px;
+        min-width: 330px;
+    }
+
+    .project-box:hover {
+        transform: scale(1.01, 1.01);
     }
 
     .category {
@@ -325,4 +337,12 @@ body {
     .nav-menu {
         display: none;
     }
+
+    .section-title {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
   }

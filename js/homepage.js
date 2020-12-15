@@ -33,27 +33,40 @@ setInterval(function() {
     }
 }, 50)
 
-// // Disable view for mobile phones.
-// function reportWindowSize() {
-//     const pageContent = document.querySelector(".page-content")
-//     const message = document.querySelector("#message")
-//     if(window.innerWidth <= 600){ 
-//         pageContent.style.visibility = "hidden"
-//         message.style.visibility = "visible"
-//         message.style.left = 0
-//         message.innerHTML = "Please open the webpage from your computer."
+// Smooth scroll down for navbar links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Disable view for mobile phones.
+/*
+function reportWindowSize() {
+    const pageContent = document.querySelector(".page-content")
+    const message = document.querySelector("#message")
+    if(window.innerWidth <= 600){ 
+        pageContent.style.visibility = "hidden"
+        message.style.visibility = "visible"
+        message.style.left = 0
+        message.innerHTML = "Please open the webpage from your computer."
         
-//     } else {
-//         message.style.visibility = "hidden"
-//         message.innerHTML = ""
-//         pageContent.style.visibility = "visible"
-//     }
-// }
+    } else {
+        message.style.visibility = "hidden"
+        message.innerHTML = ""
+        pageContent.style.visibility = "visible"
+    }
+}
 
-// window.onresize = reportWindowSize;
-// window.onload = reportWindowSize;
+window.onresize = reportWindowSize;
+window.onload = reportWindowSize;
+*/
 
-//slide tech stack categories from the left side of the screen
+//Slide tech stack categories from the left side of the screen
 var categories = document.querySelector(".categories");
 var category = document.querySelectorAll(".category");
 

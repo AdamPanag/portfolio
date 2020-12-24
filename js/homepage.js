@@ -68,7 +68,6 @@ var observer = new IntersectionObserver(function(entries) {
 
 observer.observe(categories);
 
-
 // Disable view for mobile phones.
 /*
 function reportWindowSize() {

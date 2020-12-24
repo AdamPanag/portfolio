@@ -66,7 +66,7 @@ body {
 #info {
     margin-top: 10px;
     margin-bottom: 15px;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,20 +314,16 @@ body {
     font-weight: 600;
 }
 
-#message {
-    position: absolute;
-    visibility: hidden;
-    top: 200px;
-    left: -100px;
-    font-size: 25px;
-    font-weight: 600;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.7);
-    border-radius: 30px;
-    padding: 10px;
-    margin: 20px;
-}
-
 @media screen and (max-width: 600px) {
+
+    #info {
+        flex-direction: column;
+    }
+
+    .intro {
+        padding: 0px 40px;
+    }
+
     .project-box {
         min-width: 330px;
     }

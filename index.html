@@ -22,233 +22,262 @@
 </head>
 
 <body>
-    <div class="page-content">
-        <nav class="navbar">
-            <div class="logo-space">
-                <a class="logo" href="#">//AdamPanag</a>
+    
+    <nav class="navbar">
+        <div class="logo-space">
+            <a class="logo" href="#">//AdamPanag</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#info" class="nav-links">{info}</a></li>
+            <li><a href="#education" class="nav-links">{education}</a></li>
+            <li><a href="#projects" class="nav-links">{projects}</a></li>
+            <li><a href="#tech-stack" class="nav-links">{tech-stack}</a></li>
+            <li>
+                <a href="files/Adam-Panagiotidis-Resume.pdf" class="nav-links">
+                    <i class="fas fa-file"></i>Resume
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="info">
+        <div class="intro">
+            <h2 class="greeting">My name is Adam Panagiotidis.</h2>
+            <p>
+                I have built this page, from scratch, in order to practise my front-end development skills.
+                Here, you will find some of my projects and you will get to know me better.
+            </p>
+            <div class="social">
+                <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adam-panagiotidis/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:adampanag06@gmail.com">
+                    <i class="far fa-envelope"></i>
+                </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#info" class="nav-links">{info}</a></li>
-                <li><a href="#projects" class="nav-links">{projects}</a></li>
-                <li><a href="#tech-stack" class="nav-links">{tech-stack}</a></li>
-                <li>
-                    <a href="files/Adam-Panagiotidis-Resume.pdf" class="nav-links">
-                        <i class="fas fa-file"></i>Resume
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <button class="conversion-btn" onclick="goToProjects()">Check my work</button>
+        </div>
+        <div class="photo">
+            <img class="hero-banner" src="img/adam.png" alt="hero-banner">
+        </div>
+    </section>
 
-        <section id="info">
-            <div class="intro">
-                <h2 class="greeting">My name is Adam Panagiotidis.</h2>
-                <p>
-                    I have built this page, from scratch, in order to practise my front-end development skills.
-                    Here, you will find some of my projects and you will get to know me better.
-                </p>
-                <div class="social">
-                    <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/adam-panagiotidis/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:adampanag06@gmail.com">
-                        <i class="far fa-envelope"></i>
-                    </a>
+    <section id="education">
+        <div class="section-title">{education}</div>
+        <div class="edu-items">
+            <div class="edu-item">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
-                <button class="conversion-btn" onclick="goToProjects()">Check my work</button>
-            </div>
-            <div class="photo">
-                <img class="hero-banner" src="img/adam.png" alt="hero-banner">
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="section-title">{projects}</div>
-            <div class="projects-list"> 
-                <!-- USA Elections -->
-                <div class="project-box">
-                    <img class="project-img" src="img/usa.png" alt="">
-                    <div class="project-info">
-                        <span class="title">USA Elections - Data Analytics</span>
-                        <p>Analyzing the data from the 2016 USA elections. Finding the top donors, 
-                            campaign expenditures, investigating swing states etc.</p>
-                        <div class="labels">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>Matplotlib</span>
-                        </div>
-
-                        <div class="bottom">
-                            <div class="project-links">
-                                <hr>
-                                <a href="https://nbviewer.jupyter.org/github/AdamPanag/USA_elections_2016_Data_Analysis/blob/main/USA_elections_2016.ipynb">
-                                    <i class="fas fa-globe"></i>
-                                </a>
-                                <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <h2 class="title">Management Science & Technology</h2>
+                    <h3 class="uni">Athens University of Economics & Business</h3>
+                    <p>Major in Software Engineering and Data Analytics.</p>
+                    <p>Minor in e-Business.</p>
+                    <p class="sumarry">2017 - 2021</p>
                 </div>
-                <!-- Eatros -->
-                <div class="project-box">
-                    <img class="project-img" src="img/eatros.png" alt="">
-                    <div class="project-info">
-                        <span class="title">Eatros</span>
-                        <p>A web application that connects patients with doctors.</p>
-                        <div class="labels">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>NoSQL</span>
-                        </div>
-                        <hr>
-                        <div class="bottom">
-                            <div class="project-links">
-                                <hr>
-                                <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Clak -->
-                <div class="project-box">
-                    <img class="project-img" src="img/clak.png" alt="clak">
-                    <div class="project-info">
-                        <span class="title">Clak</span>
-                        <p>An Android application where shops & organizations identify their customers, using QR Codes.</p>
-                        <div class="labels">
-                            <span>Java</span>
-                            <span>Android Studio</span>
-                            <span>XML</span>
-                        </div>
-                        <hr>
-                        <div class="bottom">
-                            <div class="project-links">
-                                <hr>
-                                <a href="https://github.com/AdamPanag/clak">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- moovable -->
-                <div class="project-box">
-                    <img class="project-img" src="img/moovable.png" alt="">
-                    <div class="project-info">
-                        <span class="title">moovable</span>
-                        <p>A landing page for a startup idea.</p>
-                        <div class="labels">
-                            <span>WordPress</span>
-                            <span>Azure</span>
-                            <span>Elementor</span>
-                        </div>
-                        <hr>
-                        <div class="bottom">
-                            <div class="project-links">
-                                <hr>
-                                <a href="https://moovable.azurewebsites.net/">
-                                    <i class="fas fa-globe"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Shoe Card -->
-                <div class="project-box">
-                    <img class="project-img" src="img/adidas.png" alt="">
-                    <div class="project-info">
-                        <span class="title">Shoe Card</span>
-                        <p>An e-shop item card with special moves.</p>
-                        <div class="labels">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <hr>
-                        <div class="bottom">
-                            <div class="project-links">
-                                <hr>
-                                <a href="shoe-card/index.html">
-                                    <i class="fas fa-globe"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
             
-        </section>
-
-        <section id="tech-stack">
-            <div class="section-title">{tech-stack}</div>
-            <div class="categories">
-                <div class="category">
-                    <span class="category-title">Data Analytics</span>
-                    <div class="skills">
-                        <div class="skill">
-                            <img class="square" src="img/python.png" alt="python">
-                        </div>
-                        <div class="skill">
-                            <img class="rectangle" src="img/pandas.png" alt="pandas">
-                        </div>
-                        <div class="skill">
-                            <img class="rectangle" src="img/matplotlib.svg" alt="matplotlib">
-                        </div>
-                        <div class="skill">
-                            <img class="square" src="img/tableau.jpg" alt="tableau">
-                        </div>
-                        <div class="skill">
-                            <img class="square" src="img/ggplot.png" alt="ggplot">
-                        </div>
-                        <div class="skill">
-                            <img class="square" src="img/excel.png" alt="excel">
-                        </div>
-                    </div>
+            <div class="edu-item">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
-                <div class="category">
-                    <div class="category-title">Software Development</div>
-                    <div class="skills">
-                        <div class="skill">
-                            <img class="rectangle" src="img/java.jpg" alt="java">
-                        </div>
-                        <div class="skill">
-                            <img class="rectangle" src="img/django.png" alt="django">
-                        </div>
-                        <div class="skill">
-                            <img class="square" src="img/js.jpg" alt="js">
-                        </div>
-                        <div class="skill">
-                            <img class="square" src="img/html.png" alt="html">
-                        </div>
-                        <div class="skill">
-                            <img class="square" src="img/css.png" alt="css">
-                        </div>
-                        <div class="skill">
-                            <img class="rectangle" src="img/mysql.png" alt="mysql">
+                <div>
+                    <h2 class="title">Supply Chain & Project Management</h2>
+                    <h3 class="uni">University of Cologne (Erasmus+)</h3>
+                    <p class="sumarry">2019 - 2020</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="section-title">{projects}</div>
+        <div class="projects-list"> 
+            <!-- USA Elections -->
+            <div class="project-box">
+                <img class="project-img" src="img/usa.png" alt="">
+                <div class="project-info">
+                    <span class="title">USA Elections - Data Analytics</span>
+                    <p>Analyzing the data from the 2016 USA elections. Finding the top donors, 
+                        campaign expenditures, investigating swing states etc.</p>
+                    <div class="labels">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
+                            <a href="https://nbviewer.jupyter.org/github/AdamPanag/USA_elections_2016_Data_Analysis/blob/main/USA_elections_2016.ipynb">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- Eatros -->
+            <div class="project-box">
+                <img class="project-img" src="img/eatros.png" alt="">
+                <div class="project-info">
+                    <span class="title">Eatros</span>
+                    <p>A web application that connects patients with doctors.</p>
+                    <div class="labels">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>NoSQL</span>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
+                            <a href="https://github.com/AdamPanag/USA_elections_2016_Data_Analysis">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Clak -->
+            <div class="project-box">
+                <img class="project-img" src="img/clak.png" alt="clak">
+                <div class="project-info">
+                    <span class="title">Clak</span>
+                    <p>An Android application where shops & organizations identify their customers, using QR Codes.</p>
+                    <div class="labels">
+                        <span>Java</span>
+                        <span>Android Studio</span>
+                        <span>XML</span>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
+                            <a href="https://github.com/AdamPanag/clak">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- moovable -->
+            <div class="project-box">
+                <img class="project-img" src="img/moovable.png" alt="">
+                <div class="project-info">
+                    <span class="title">moovable</span>
+                    <p>A landing page for a startup idea.</p>
+                    <div class="labels">
+                        <span>WordPress</span>
+                        <span>Azure</span>
+                        <span>Elementor</span>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
+                            <a href="https://moovable.azurewebsites.net/">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
 
-        <div class="footer">
-            <p>
-                <i class="far fa-copyright"></i>
-                Created by <a href="https://www.linkedin.com/in/adam-panagiotidis/">Adam Panagiotidis</a>
-            </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe Card -->
+            <div class="project-box">
+                <img class="project-img" src="img/adidas.png" alt="">
+                <div class="project-info">
+                    <span class="title">Shoe Card</span>
+                    <p>An e-shop item card with special moves.</p>
+                    <div class="labels">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <div class="project-links">
+                            <hr>
+                            <a href="shoe-card/index.html">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
         
+    </section>
+
+    <section id="tech-stack">
+        <div class="section-title">{tech-stack}</div>
+        <div class="categories">
+            <div class="category">
+                <span class="category-title">Data Analytics</span>
+                <div class="skills">
+                    <div class="skill">
+                        <img class="square" src="img/python.png" alt="python">
+                    </div>
+                    <div class="skill">
+                        <img class="rectangle" src="img/pandas.png" alt="pandas">
+                    </div>
+                    <div class="skill">
+                        <img class="rectangle" src="img/matplotlib.svg" alt="matplotlib">
+                    </div>
+                    <div class="skill">
+                        <img class="square" src="img/tableau.jpg" alt="tableau">
+                    </div>
+                    <div class="skill">
+                        <img class="square" src="img/ggplot.png" alt="ggplot">
+                    </div>
+                    <div class="skill">
+                        <img class="square" src="img/excel.png" alt="excel">
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-title">Software Development</div>
+                <div class="skills">
+                    <div class="skill">
+                        <img class="rectangle" src="img/java.jpg" alt="java">
+                    </div>
+                    <div class="skill">
+                        <img class="rectangle" src="img/django.png" alt="django">
+                    </div>
+                    <div class="skill">
+                        <img class="square" src="img/js.jpg" alt="js">
+                    </div>
+                    <div class="skill">
+                        <img class="square" src="img/html.png" alt="html">
+                    </div>
+                    <div class="skill">
+                        <img class="square" src="img/css.png" alt="css">
+                    </div>
+                    <div class="skill">
+                        <img class="rectangle" src="img/mysql.png" alt="mysql">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>
+            <i class="far fa-copyright"></i>
+            Developed by <a href="https://www.linkedin.com/in/adam-panagiotidis/">Adam Panagiotidis</a>
+        </p>
     </div>
 
 <script src="js/homepage.js"></script>

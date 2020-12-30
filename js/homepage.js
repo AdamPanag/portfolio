@@ -22,13 +22,32 @@ setInterval(function() {
     }
 }, 50)
 
+// Shorten navbar when scrolling.
+var navbar = document.querySelector(".navbar");
+var sticky = 0;
+window.onscroll = function() {navSticky()};
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function navSticky() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky")
+    console.log("add")
+  } else {
+    navbar.classList.remove("sticky");
+    console.log("remove")
+  }
+}
+
+
+
 // Smooth scroll down for navbar links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: "start"
         });
     });
 });
@@ -48,7 +67,6 @@ var category = document.querySelectorAll(".category");
 var observer = new IntersectionObserver(function(entries) {
     //the screen displays the tech-stack element
 	if(entries[0].isIntersecting === true) { 
-        console.log('Element has just become visible in screen');
         category.forEach(item => {
             item.style.left = '0px';
         });
@@ -57,11 +75,9 @@ var observer = new IntersectionObserver(function(entries) {
 
     //the screen doesn't display the tech-stack element
     if(entries[0].isIntersecting === false) { 
-        console.log('out');
         category.forEach(item => {
             item.style.left = '-2000px';
         });
-
     }
         
 }, { threshold: [0] });
